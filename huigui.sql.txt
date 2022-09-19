@@ -1,0 +1,50 @@
+create table department
+(
+id int,
+departmentName varchar(20)
+);
+
+create table employee
+(
+id int primary key auto_increment,
+lastName varchar(20),
+email varchar(20),
+gender int,
+departmentId int,
+birth date
+);
+
+create table user
+(
+uid int primary key auto_increment,
+username varchar(100),
+password varchar(250),
+phone varchar(50),
+role varchar(50)
+);
+
+#day,uid,sginin,inState,sginout,outState
+create table workTime
+(
+day varchar(100),
+uid int,
+sginin varchar(100),
+inState varchar(250),
+sginout varchar(50),
+outState varchar(50)
+);
+
+insert into employee values(1,'AA','A24734673@qq.com',1,101,'2022-07-12 12:24:43');
+insert into employee values(2,'BB','B24734673@qq.com',0,102,'2022-07-13 12:24:43');
+insert into employee values(3,'CC','C24734673@qq.com',1,103,'2022-07-14 12:24:43');
+insert into employee values(4,'DD','D24734673@qq.com',0,104,'2022-07-15 12:24:43');
+insert into employee values(5,'EE','E24734673@qq.com',1,105,'2022-07-16 12:24:43');
+
+
+insert into department values(101,'Teaching Department');
+insert into department values(102,'Marketing Department');
+insert into department values(103,'Research Department');
+insert into department values(104,'Operation Department');
+insert into department values(105,'Logistics Department');
+
+insert into user values(1,'admin','admin','123456678901','root');
