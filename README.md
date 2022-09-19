@@ -1,4 +1,4 @@
-# Where-is-spring
+# Attendance management
 （1）用到的技术大体上介绍
 基于springboot框架，springSecurity安全验证、Thymeleaf和mysql的简易考勤管理系统
 （2）系统功能截图在images文件夹下，看图了解系统大致功能
